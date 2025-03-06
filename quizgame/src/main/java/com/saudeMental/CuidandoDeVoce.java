@@ -17,7 +17,8 @@ public class CuidandoDeVoce {
 
         switch (escolha) {
             case 1:
-                JogoSaudeMental jogoEscolhas = new JogoSaudeMental();
+                // Alterado para a classe JogoSaudeMentalAvancado
+                JogoSaudeMentalAvancado jogoEscolhas = new JogoSaudeMentalAvancado("Personagem");
                 jogoEscolhas.iniciarJogo(scanner);
                 break;
             case 2:
