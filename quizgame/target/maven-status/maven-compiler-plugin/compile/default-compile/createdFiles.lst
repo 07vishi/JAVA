@@ -1,3 +1,6 @@
-com/quizgame/QuizGame.class
-com/quizgame/App.class
-com/quizgame/Question.class
+com/saudeMental/JogoGratidao.class
+com/saudeMental/DatabaseHandler.class
+com/saudeMental/MongoClientConnectionExample.class
+com/saudeMental/CuidandoDeVoce.class
+com/saudeMental/JogoSaudeMentalAvancado.class
+com/saudeMental/JogoAutoexpressao.class

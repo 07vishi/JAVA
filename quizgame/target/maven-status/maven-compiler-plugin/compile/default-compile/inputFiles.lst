@@ -1,4 +1,6 @@
-/home/novousuario/JAVA/quizgame/src/main/java/com/quizgame/PlayerRepository.java
-/home/novousuario/JAVA/quizgame/src/main/java/com/quizgame/Player.java
-/home/novousuario/JAVA/quizgame/src/main/java/com/quizgame/MongoDBConnection.java
-/home/novousuario/JAVA/quizgame/src/main/java/com/quizgame/App.java
+/home/novousuario/JAVA/quizgame/src/main/java/com/saudeMental/JogoAutoexpressao.java
+/home/novousuario/JAVA/quizgame/src/main/java/com/saudeMental/database/MongoClientConnectionExample.java
+/home/novousuario/JAVA/quizgame/src/main/java/com/saudeMental/JogoGratidao.java
+/home/novousuario/JAVA/quizgame/src/main/java/com/saudeMental/database/DatabaseHandler.java
+/home/novousuario/JAVA/quizgame/src/main/java/com/saudeMental/CuidandoDeVoce.java
+/home/novousuario/JAVA/quizgame/src/main/java/com/saudeMental/JogoSaudeMentalAvancado.java
