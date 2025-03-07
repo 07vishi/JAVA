@@ -1,6 +1,9 @@
 package com.saudeMental;
 
 import java.util.Scanner;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoDatabase;
 
 public class JogoSaudeMentalAvancado {
     private int energia;
@@ -18,6 +21,13 @@ public class JogoSaudeMentalAvancado {
     }
 
     public void iniciarJogo(Scanner scanner) {
+        // Conectar ao MongoDB e preparar o handler
+        String connectionString = "mongodb+srv://sudemental:saude123456@conhecimento.jproi.mongodb.net/?retryWrites=true&w=majority&appName=conhecimento";
+        MongoClient mongoClient = MongoClients.create(connectionString);
+        MongoDatabase database = mongoClient.getDatabase("saudeMentalDB");
+        DatabaseHandler dbHandler = new DatabaseHandler(database);
+       
+       
         System.out.println("Bem-vindo à 'Jornada do Bem-Estar Mental'!");
         System.out.println("Olá, " + nomePersonagem + "! Vamos embarcar nessa jornada para melhorar seu bem-estar mental.");
         System.out.println("Seu objetivo é encontrar equilíbrio, tomar boas decisões e melhorar sua qualidade de vida.");
@@ -30,6 +40,10 @@ public class JogoSaudeMentalAvancado {
 
         // Feedback final baseado nas condições do personagem
         feedbackFinal();
+
+
+        // Salvar os resultados no banco de dados
+        dbHandler.salvarResultados(nomePersonagem, energia, felicidade, estresse, pontuacao);
     }
 
     private void cicloDiario1(Scanner scanner) {
